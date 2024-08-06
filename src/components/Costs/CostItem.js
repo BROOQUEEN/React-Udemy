@@ -6,8 +6,8 @@ import Card from '../UI/Card';
 
 const CostItem = (props) => {
 
-    const changeDescription = () => {
-        console.log("Клик")
+    const changeDescriptionHandler = () => {
+        console.log("Клик");
     };
 
     return (
@@ -18,7 +18,7 @@ const CostItem = (props) => {
                 <h2>{props.description}</h2>
                 <div className='cost-item__price'>${props.amount}</div>
             </div>
-            <button onClick={changeDescription}>Изменить описание</button>
+            <button onClick={changeDescriptionHandler}>Изменить описание</button>
         </Card>
     );
 }
