@@ -8,7 +8,7 @@ const CostItem = (props) => {
 
     const changeDescription = () => {
         console.log("Клик")
-    }
+    };
 
     return (
 

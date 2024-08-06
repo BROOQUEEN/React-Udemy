@@ -1,7 +1,7 @@
 import CostItem from "./components/Costs/CostItem";
 import Costs from "./components/Costs/Costs";
 
-function App() {
+const App = () => {
 
   const costs = [
     {
