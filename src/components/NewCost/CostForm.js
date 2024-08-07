@@ -1,9 +1,22 @@
+import React, { useState } from 'react';
 import './CostForm.css';
 
 const CostForm = () => {
 
+    const [name, setName] = useState('');
+    const [amount, setAmount] = useState('');
+    const [date, setDate] = useState('');
+
     const nameChangeHandler = (event) => {
-        console.log(event);
+        setName(event.target.value);
+    };
+
+    const amountChangeHandler = (event) => {
+        setAmount(event.target.value);
+    };
+    
+    const dateChangeHandler = (event) => {
+        setDate(event.target.value);
     };
 
     return <form className="new-cost__controls">
